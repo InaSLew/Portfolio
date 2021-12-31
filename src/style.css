@@ -202,7 +202,7 @@ li {
 .project-container {
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(auto-fit, 300px);
+    grid-template-columns: repeat(auto-fit, 600px);
     place-content: center;
     gap: 1rem;
 }
@@ -220,7 +220,7 @@ li {
 
 /* || grid card */
 .project-card {
-    width: 300px;
+    width: 580px;
     height: 350px;
     box-shadow: 5px 5px 20px rgb(197, 195, 195);
     margin: 10px;
@@ -228,7 +228,7 @@ li {
 }
 
 .project-card.expand {
-    height: 550px;
+    height: 580px;
 }
 
 article.project-card:hover {
@@ -249,7 +249,7 @@ article.project-card:hover {
 }
 
 .subtext {
-    font-size: 15px;
+    font-size: 20px;
     font-weight: 300;
     padding: 10px;
 }
