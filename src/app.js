@@ -1,9 +1,9 @@
-// Hamburger menu reference and its callabck function
+// Toggle hamburger menu in mobile
 const hamburgerBtn = document.getElementById('hamburger');
 const navList = document.getElementById("nav-list");
 const toggleBtn = () => navList.classList.toggle('show');
 
-// Project card detail
+// Toggle project-card-detail
 const targetCards = document.getElementsByClassName('project-card');
 const toggleCardDetail = (index, element) => {
     const targetCard = document.getElementsByClassName('project-card')[index];
