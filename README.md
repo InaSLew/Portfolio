@@ -5,6 +5,7 @@ This portfolio page is based on [Ania Kubow's responsive portfolio repo](https:/
 - Pill-button tags
 - Scroll-to-top button
 
----
+## Check out the [Portfolio here](https://inaslew.github.io/Portfolio/) ✨
 
+### Note
 The page is currently made with just html, css and javascript; but as the portfolio grows, migrating to a framework is definitely in the cards later down the road.
