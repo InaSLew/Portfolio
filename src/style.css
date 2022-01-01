@@ -88,6 +88,29 @@ a {
 /**********************/
 /**********************/
 
+#scroll-to-top {
+    position: fixed;
+    right: 2rem;
+    bottom: 2rem;
+
+    width: 100px;
+    height: 55px;
+    border-radius: 30px;
+    background-color: coral;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 300;
+    padding-top: 5px;
+    margin-top: 20px;
+
+    text-decoration: none;
+    color: white;
+}
+
+.hidden {
+    display: none;
+}
+
 /* || Header overall */
 .hero {
     background-color: #1c1d25;
