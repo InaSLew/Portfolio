@@ -57,6 +57,33 @@ a {
     color: #808080;
 }
 
+.pill-button {
+    border: none;
+    color: white;
+    padding: 5px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    border-radius: 100px;
+}
+
+.pill-button-project-independent {
+    background-color: coral;
+}
+
+.pill-button-project-school {
+    background-color: cornflowerblue;
+}
+
+.pill-button-project-game-jam {
+    background-color: darkorchid;
+}
+
+.pill-button-madein-unity {
+    background-color: darkslateblue;
+}
+
 /**********************/
 /**********************/
 /**********************/
@@ -221,7 +248,7 @@ li {
 /* || grid card */
 .project-card {
     width: 580px;
-    height: 350px;
+    height: 380px;
     box-shadow: 5px 5px 20px rgb(197, 195, 195);
     margin: 10px;
     transition: all 0.3s;
