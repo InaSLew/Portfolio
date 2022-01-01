@@ -1,4 +1,4 @@
-# Portfolio page
+# Responsive portfolio page
 This portfolio page is based on [Ania Kubow's responsive portfolio repo](https://github.com/kubowania/responsive-portfolio) with my own added adjustments, namingly:
 - Project card stacking in mobile mode
 - Expandable project cards
