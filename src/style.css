@@ -228,7 +228,7 @@ li {
 }
 
 .project-card.expand {
-    height: 580px;
+    height: fit-content;
 }
 
 article.project-card:hover {
