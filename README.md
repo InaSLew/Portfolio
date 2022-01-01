@@ -3,6 +3,7 @@ This portfolio page is based on [Ania Kubow's responsive portfolio repo](https:/
 - Project card stacking in mobile mode
 - Expandable project cards
 - Pill-button tags
+- Scroll-to-top button
 
 ---
 
