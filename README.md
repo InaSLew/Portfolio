@@ -7,5 +7,7 @@ This portfolio page is based on [Ania Kubow's responsive portfolio repo](https:/
 
 ## Check out the [Portfolio here](https://inaslew.github.io/Portfolio/) ✨
 
+## IMPORTANT ✨ Please cred @InaSLew/this repo if you'd like to borrow it and/or expand on it.
+
 ### Note
 The page is currently made with just html, css and javascript; but as the portfolio grows, migrating to a framework is definitely in the cards later down the road.
