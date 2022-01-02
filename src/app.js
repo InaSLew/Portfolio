@@ -20,7 +20,7 @@ document.addEventListener('scroll', () => {
     scrollContainer().scrollTop > showOnPx ?
     scrollToTopButton.classList.remove('hidden') : scrollToTopButton.classList.add('hidden');
   });
-const goToTop = () => document.body.scrollIntoView({ behavior: "smooth" });
+const goToTop = () => document.body.scrollIntoView();
 
 // Adding EventListeners
 hamburgerBtn.addEventListener('click', toggleBtn);
