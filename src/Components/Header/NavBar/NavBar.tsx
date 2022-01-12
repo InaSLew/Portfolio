@@ -1,9 +1,10 @@
 import './NavBar.css';
+import avatar from '../avatar.png';
 
 const NavBar = () => {
     return (
         <div className="nav">
-            <img className="logo" src="src/images/avatar.png" alt="Ina Shen-Lewander's avatar"/>
+            <img className="logo" src={avatar} alt="Ina Shen-Lewander's avatar"/>
             <ul id="nav-list">
                 <li><a href="#about-me">About me</a></li>
                 <li><a href="#projects">Projects</a></li>
