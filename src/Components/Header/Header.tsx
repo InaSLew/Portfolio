@@ -1,9 +1,10 @@
 import './Header.css';
+import NavBar from './NavBar/NavBar';
 
 const Header = () => {
     return (
         <header className="hero">
-            this where header be
+            <NavBar />
         </header>
     );
 }

@@ -1,0 +1,61 @@
+.logo {
+    height: 80px;
+    margin: 30px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+#nav-list {
+    display: flex;
+    list-style-type: none;
+    width: 500px;
+    justify-content: space-around;
+    font-size: 30px;
+}
+
+#nav-list > li {
+    text-decoration: none;
+}
+
+.hamburger {
+    display: none;
+}
+
+.hamburger:focus{
+    outline: 0;
+}
+
+@media only screen and (max-width: 1000px) {
+    .hamburger {
+        display: block;
+        border: 0;
+        background-color: transparent;
+        color: white;
+        font-size: 30px;
+        margin: 20px;
+        align-self: flex-end;
+    }
+
+    #nav-list {
+        display: none;
+        background-color: #2b2c38;
+        margin: 0ppx;
+    }
+
+    #nav-list.show {
+        display: block;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column-reverse;
+        background-color: #2b2c38;
+    }
+
+    .logo {
+        display: none;
+    }
+}

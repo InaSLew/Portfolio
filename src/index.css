@@ -9,6 +9,29 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+/*****************/
+/* Font settings */
+/*****************/
+h1 {
+  font-size: 90px;
+  margin: 0;
+}
+
+h2 {
+  font-size: 50px;
+}
+
+p {
+  margin: 0;
+  font-size: 30px;
+  font-weight: 300;
+}
+
+hr {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;

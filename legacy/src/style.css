@@ -1,18 +1,18 @@
 /* || Overall styles */
-html {
+/* html {
     scroll-behavior: smooth;
 }
 
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
-}
+} */
 
 section {
     background-color: white;
 }
 
-h1 {
+/* h1 {
     font-size: 90px;
     margin: 0;
 }
@@ -30,7 +30,7 @@ p {
 hr {
     margin-left: 20px;
     margin-right: 20px;
-}
+} */
 
 .project-link {
     text-decoration: none;
@@ -116,19 +116,19 @@ a {
 }
 
 /* || Header overall */
-.hero {
+/* .hero {
     background-color: #1c1d25;
     height: 100vh;
     color: white;
     font-size: 40px;
-}
+} */
 
 /**********************/
 /**********************/
 /**********************/
 
 /* || Header/nav bar (and hamburger menu in mobile) */
-nav {
+/* nav {
     display: flex;
     justify-content: space-between;
 }
@@ -151,9 +151,9 @@ nav {
 
 .hamburger:focus{
     outline: 0;
-}
+} */
 
-@media only screen and (max-width: 1000px) {
+/* @media only screen and (max-width: 1000px) {
     .hamburger {
         display: block;
         border: 0;
@@ -183,7 +183,7 @@ nav {
     .logo {
         display: none;
     }
-}
+} */
 
 /**********************/
 /**********************/
@@ -202,10 +202,10 @@ nav {
     margin-bottom: 200px;
 }
 
-.logo {
+/* .logo {
     height: 80px;
     margin: 30px;
-}
+} */
 
 /**********************/
 /**********************/
