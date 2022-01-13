@@ -6,8 +6,8 @@ function App() {
   return (
     <div>
       <Header />
-      <Section />
-      <Section />
+      <Section id = {'about-me'} />
+      <Section id = {'projects'} />
       <Footer />
     </div>
   );

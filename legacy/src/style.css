@@ -8,9 +8,9 @@ body {
     margin: 0;
 } */
 
-section {
+/* section {
     background-color: white;
-}
+} */
 
 /* h1 {
     font-size: 90px;
@@ -224,7 +224,7 @@ hr {
 /**********************/
 
 /* || ("About me") */
-.sub-section {
+/* .sub-section {
     display: flex;
     justify-content: space-around;
     padding: 80px;
@@ -239,7 +239,7 @@ hr {
 .headshot-container {
     display: flex;
     align-items: center;
-}
+} */
 
 /**********************/
 /**********************/
