@@ -1,3 +1,4 @@
+import Button from '../../UI/Button/Button';
 import './HeroArea.css';
 
 // Note: should probably break this further into 2 components: HeroText and Social
@@ -7,7 +8,7 @@ const HeroArea = () => {
             <div className="hero-text">
                 <h1>Ina Shen-Lewander</h1>
                 <p>Game developer</p>
-                <div className="button"><a href="#about-me">About me</a></div>
+                <Button buttonLink = {'#about-me'} buttonLabel = { 'About me' } />
             </div>
             <div className="socials">
                 <div><a href="https://github.com/InaSLew"  className="social">
