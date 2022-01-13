@@ -1,14 +1,1 @@
-section {
-    background-color: white;
-}
 
-.headshot {
-    width: 300px;
-    border-radius: 150px;
-    margin-left: 80px;
-}
-
-.headshot-container {
-    display: flex;
-    align-items: center;
-}
