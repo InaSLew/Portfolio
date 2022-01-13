@@ -1,5 +1,5 @@
 import './NavBar.css';
-import avatar from '../avatar.png';
+import avatar from '../../avatar.png';
 
 // Note: on refactor list
 

@@ -253,7 +253,7 @@ hr {
     padding: 80px;
 }
 
-.project-container {
+/* .project-container {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(auto-fit, 600px);
@@ -266,7 +266,7 @@ hr {
         grid-template-columns: 1fr;
         justify-items: center;
     }
-}
+} */
 
 /**********************/
 /**********************/
