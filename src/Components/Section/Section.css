@@ -2,12 +2,6 @@ section {
     background-color: white;
 }
 
-.sub-section {
-    display: flex;
-    justify-content: space-around;
-    padding: 80px;
-}
-
 .headshot {
     width: 300px;
     border-radius: 150px;

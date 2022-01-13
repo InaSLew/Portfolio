@@ -5,7 +5,7 @@ import './Section.css';
 
 const Section : FunctionComponent<{ id: string, content: IContent }> = (props) => {
     return (
-        <section className="sub-section" id={props.id}>
+        <section id={props.id}>
             {props.content}
         </section>
     );

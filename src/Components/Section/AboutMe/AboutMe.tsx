@@ -3,8 +3,8 @@ import avatar from '../../avatar.png';
 
 const AboutMe = () => {
     return (
-        <div>
-            <div className="information">
+        <div className="about-me-section">
+            <div>
                 <h2>About Me</h2>
                 <p>Hello! I am a former web developer turning game developer.</p>
                 <p>I enjoy problem solving and seeing a game come to life through the process!</p>
