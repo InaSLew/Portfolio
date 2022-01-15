@@ -1,0 +1,25 @@
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    /* margin-top here maybe, gotta see later */
+}
+
+.mobile-project-cards-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 90vmin);
+    place-content: center;
+    gap: 10vmin;
+    justify-items: center;
+}
+
+.non-mobile-project-cards-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 70vmin);
+    place-content: center;
+    gap: 10vmin;
+    justify-items: center;
+}
+

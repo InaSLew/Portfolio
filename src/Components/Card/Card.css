@@ -1,0 +1,15 @@
+.mobile-card {
+    width: 80vmin;
+    height: 60vmin;
+    box-shadow: 5px 5px 20px rgb(197, 195, 195);
+    margin: 10px;
+    transition: all 0.3s;
+}
+
+.non-mobile-card {
+    width: 60vmin;
+    height: 40vmin;
+    box-shadow: 5px 5px 20px rgb(197, 195, 195);
+    margin: 10px;
+    transition: all 0.3s;
+}
