@@ -1,5 +1,6 @@
 /* For isDesktopOrLaptop */
 .nav-container-DesktopOrLaptop {
+    background-color: #1c1d25;
     display: flex;
     justify-content: space-between;
 }
