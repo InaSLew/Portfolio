@@ -14,12 +14,12 @@ h1 {
 }
 
 h2 {
-  font-size: 50px;
+  font-size: 8vmin;
 }
 
 p {
   margin: 0;
-  font-size: 4.5vmin;
+  font-size: 3.5vmin;
   font-weight: 300;
 }
 

@@ -1,0 +1,14 @@
+.about-me-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 5vmax;
+}
+
+.headshot-container {
+    display: flex;
+    align-items: center;
+}
+
+.head-shot {
+    width: 30vmin;
+}
