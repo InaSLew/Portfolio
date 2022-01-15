@@ -1,6 +1,6 @@
 import './Card.css';
 import img from '../../Images/crystalMountainThumbnail.png';
-import { useMediaQuery } from 'react-responsive';
+import {useMediaQuery} from 'react-responsive';
 
 const Card = () => {
     // Screen size detection
