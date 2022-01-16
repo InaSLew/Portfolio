@@ -11,7 +11,7 @@ const Card: FunctionComponent<{project: Project}> = props => {
     
     return (
         <div className={isTabletOrMobile ? 'mobile-card' : 'non-mobile-card'}>
-            <img className='project-image' src={props.project.img} alt={props.project.imgAltText} />
+            <img className={isTabletOrMobile ? 'mobile-project-image' : 'non-mobile-project-image'} src={props.project.img} alt={props.project.imgAltText} />
             <h3>{props.project.gameTitle}</h3>
             <WorkTypePillButton type={props.project.workType} text={props.project.workTypeText} />
             <EnvironmentTypePillButton type={props.project.environmentType} text={props.project.environmentTypeText} />

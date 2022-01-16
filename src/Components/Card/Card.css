@@ -14,10 +14,16 @@
     transition: all 0.3s;
 }
 
-.project-image {
+.non-mobile-project-image {
     margin-top: 3vmin;
-    width: 45vmin;
-    border-radius: 20vmin;
+    width: 500px;
+    border-radius: 200px;
+}
+
+.mobile-project-image {
+    margin-top: 3vmin;
+    width: 200px;
+    border-radius: 200px;
 }
 
 .sub-text {

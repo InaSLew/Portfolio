@@ -16,3 +16,11 @@
 .pill-button-madein-unreal {
     background-color: crimson;
 }
+
+.mobile-pill-text {
+    font-size: 8px;
+}
+
+.non-mobile-pill-text {
+    font-size: 40px;
+}

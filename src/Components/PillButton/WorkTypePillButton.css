@@ -20,3 +20,11 @@
 .pill-button-project-game-jam {
     background-color: darkorchid;
 }
+
+.mobile-pill-text {
+    font-size: 8px;
+}
+
+.non-mobile-pill-text {
+    font-size: 40px;
+}

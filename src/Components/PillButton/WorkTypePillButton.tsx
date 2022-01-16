@@ -1,8 +1,11 @@
 import { FunctionComponent } from 'react';
+import { useMediaQuery } from 'react-responsive';
 import { WorkType } from '../../Enums';
 import './WorkTypePillButton.css';
 
 const WorkTypePillButton : FunctionComponent<{type: WorkType, text: string}> = props => {
+    // Screen size detection
+    const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1224px)' });
     
     const getWorkTypeClass = () => {
         return props.type == WorkType.Independent ? 'pill-button-project-independent' :
@@ -12,7 +15,7 @@ const WorkTypePillButton : FunctionComponent<{type: WorkType, text: string}> = p
     
     return (
         <div className={'pill-button' + ' ' + getWorkTypeClass()}>
-            <p>{props.text}</p>
+            <div className={isTabletOrMobile ? 'mobile-pill-text' : 'non-mobile-pill-text'}>{props.text}</div>
         </div>
     );
 }
