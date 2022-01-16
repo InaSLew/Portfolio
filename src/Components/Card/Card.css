@@ -56,3 +56,8 @@
     text-align: left;
     width: 50vmin;
 }
+
+.project-link {
+    text-decoration: none;
+    color: #ef744b;
+}

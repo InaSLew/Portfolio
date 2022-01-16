@@ -10,10 +10,7 @@ const Card: FunctionComponent<{project: Project}> = props => {
     const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1000px)' });
     const [showCardDetail, setShowCardDetail] = useState(false);
 
-    const onCardClicked = () => {
-        setShowCardDetail(!showCardDetail);
-        console.log('Card ' + props.project.gameTitle + ' clicked');
-    }
+    const onCardClicked = () => setShowCardDetail(!showCardDetail);
 
     const getCardClass = () => {
         if (isTabletOrMobile && !showCardDetail) return 'mobile-card';
@@ -30,6 +27,8 @@ const Card: FunctionComponent<{project: Project}> = props => {
                 <ul>
                     {props.project.responsibleAreas.map((x,i) => <li key={i} className='sub-text card-detail-list-item'>{x}</li>)}
                 </ul>
+                <p className='sub-text'><a className='project-link' href={props.project.playDemoLink} target="_blank">Play here</a></p>
+                <p className='sub-text'><a className='project-link' href={props.project.repoLink} target="_blank">Project repo here</a></p>
             </div>
         );
     }
