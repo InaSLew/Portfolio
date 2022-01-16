@@ -1,9 +1,9 @@
 import {useMediaQuery} from 'react-responsive';
 import Card from '../Card/Card';
-import './Projects.css';
+import './ProjectsArea.css';
 import projectData from '../../ProjectData';
 
-const Projects = () => {
+const ProjectsArea = () => {
     // Screen size detection
     const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1224px)' });
     
@@ -16,4 +16,4 @@ const Projects = () => {
         </section>
     );
 }
-export default Projects;
+export default ProjectsArea;

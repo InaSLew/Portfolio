@@ -3,7 +3,7 @@ import AboutMe from './Components/AboutMe/AboutMe';
 import Footer from './Components/Footer/Footer';
 import HeroArea from './Components/HeroArea/HeroArea';
 import NavBar from "./Components/NavBar/NavBar";
-import Projects from './Components/Projects/Projects';
+import ProjectsArea from './Components/ProjectsArea/ProjectsArea';
 
 function App() {
   return (
@@ -13,7 +13,7 @@ function App() {
         <HeroArea />
       </div>
       <AboutMe />
-      <Projects />
+      <ProjectsArea />
       <Footer />
     </div>
   );
