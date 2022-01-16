@@ -15,20 +15,27 @@ const Card: FunctionComponent<{project: Project}> = props => {
         console.log('Card ' + props.project.gameTitle + ' clicked');
     }
 
+    const getCardClass = () => {
+        if (isTabletOrMobile && !showCardDetail) return 'mobile-card';
+        else if (isTabletOrMobile && showCardDetail) return 'mobile-card-expand';
+        else if (!isTabletOrMobile && !showCardDetail) return 'non-mobile-card';
+        else return 'non-mobile-card-expand';
+    }
+
     const CardDetail = () => {
         return (
             <div>
                 <hr />
                 {props.project.details.map((x,i) => <p key={i} className='sub-text'>{x}</p>)}
                 <ul>
-                    {props.project.responsibleAreas.map((x,i) => <li key={i} className='sub-text'>{x}</li>)}
+                    {props.project.responsibleAreas.map((x,i) => <li key={i} className='sub-text card-detail-list-item'>{x}</li>)}
                 </ul>
             </div>
         );
     }
     
     return (
-        <div onClick={onCardClicked} className={isTabletOrMobile ? 'mobile-card' : 'non-mobile-card'}>
+        <div onClick={onCardClicked} className={getCardClass()}>
             <img className={isTabletOrMobile ? 'mobile-project-image' : 'non-mobile-project-image'} src={props.project.img} alt={props.project.imgAltText} />
             <h3>{props.project.gameTitle}</h3>
             <WorkTypePillButton type={props.project.workType} text={props.project.workTypeText} />
