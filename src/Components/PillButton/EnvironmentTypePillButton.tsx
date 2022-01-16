@@ -3,6 +3,7 @@ import { useMediaQuery } from 'react-responsive';
 import { EnvironmentType } from '../../Enums';
 import './EnvironmentTypePillButton.css';
 
+/** Should be refactored together with WorkTypePillButton.tsx and .css */
 const EnvironmentTypePillButton : FunctionComponent<{type: EnvironmentType, text: string}> = props => {
     // Screen size detection
     const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1224px)' });
