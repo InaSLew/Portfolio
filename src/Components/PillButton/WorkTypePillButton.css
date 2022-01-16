@@ -22,9 +22,9 @@
 }
 
 .mobile-pill-text {
-    font-size: 8px;
+    font-size: 2vmin;
 }
 
 .non-mobile-pill-text {
-    font-size: 40px;
+    font-size: 1.5vmax;
 }
