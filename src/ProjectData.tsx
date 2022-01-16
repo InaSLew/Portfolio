@@ -15,7 +15,7 @@ const projectData: Project[] = [
         'Made in Unity',
         'A 2D side-scrolling, ice-spike-dodging runner game featuring self-drawn pixel art.',
         ['Originally a school project, I expanded the core gameplay (i.e. dodging 2 types of obstacles through jumping) by implementing one more obstacle variant and a second way of dodging (ducking).'],
-        [''],
+        [],
         'https://inaslew.github.io/Play-Crystal-Mountain/',
         'https://github.com/InaSLew/Crystal-Mountain'
         ),

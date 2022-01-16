@@ -7,7 +7,7 @@ import EnvironmentTypePillButton from '../PillButton/EnvironmentTypePillButton';
 
 const Card: FunctionComponent<{project: Project}> = props => {
     // Screen size detection
-    const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1224px)' });
+    const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1000px)' });
     const [showCardDetail, setShowCardDetail] = useState(false);
 
     const onCardClicked = () => {
@@ -20,6 +20,9 @@ const Card: FunctionComponent<{project: Project}> = props => {
             <div className={isTabletOrMobile ? 'mobile-project-card-detail' : 'non-mobile-project-card-detail'}>
                 <hr />
                 {props.project.details.map((x,i) => <p key={i} className='sub-text'>{x}</p>)}
+                <ul>
+                    {props.project.responsibleAreas.map((x,i) => <li key={i} className='sub-text'>{x}</li>)}
+                </ul>
             </div>
         );
     }

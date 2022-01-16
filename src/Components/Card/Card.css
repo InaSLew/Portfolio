@@ -1,28 +1,30 @@
 .mobile-card {
     width: 80vmin;
-    height: 70vmin;
+    height: 50vmin;
     box-shadow: 5px 5px 20px rgb(197, 195, 195);
     margin: 10px;
     transition: all 0.3s;
+    border-radius: 20px;
 }
 
 .non-mobile-card {
     width: 60vmin;
-    height: 65vmin;
+    height: 60vmin;
     box-shadow: 5px 5px 20px rgb(197, 195, 195);
     margin: 10px;
     transition: all 0.3s;
+    border-radius: 20px;
 }
 
 .non-mobile-project-image {
     margin-top: 3vmin;
-    width: 500px;
+    width: 40vmin;
     border-radius: 200px;
 }
 
 .mobile-project-image {
     margin-top: 3vmin;
-    width: 200px;
+    width: 30vmin;
     border-radius: 200px;
 }
 
