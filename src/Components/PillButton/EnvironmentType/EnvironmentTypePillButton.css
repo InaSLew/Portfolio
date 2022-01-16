@@ -1,0 +1,18 @@
+.pill-button {
+    border: none;
+    color: white;
+    padding: 5px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    border-radius: 100px;
+}
+
+.pill-button-madein-unity {
+    background-color: darkslateblue;
+}
+
+.pill-button-madein-unreal {
+    background-color: crimson;
+}

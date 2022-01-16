@@ -1,0 +1,22 @@
+
+.pill-button {
+    border: none;
+    color: white;
+    padding: 5px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    border-radius: 100px;
+}
+.pill-button-project-independent {
+    background-color: coral;
+}
+
+.pill-button-school-project {
+    background-color: cornflowerblue;
+}
+
+.pill-button-project-game-jam {
+    background-color: darkorchid;
+}
