@@ -28,7 +28,7 @@ const projectData: Project[] = [
         smallTheftAuto,
         'Thumbnail for Small Theft Auto',
         'Small Theft Auto',
-        'A very down-scaled, simplified clone of the old classic <i>Grand Theft Auto 2</i>',
+        'A very down-scaled, simplified clone of the old classic Grand Theft Auto 2',
         ['In this group effort of me and other 3 programming students, my main working areas included'],
         ['scripts of base classes for Car and Player', 'scripts for player\'s attack and equipping/swapping between 3 types of weapons (1 melee and 2 guns)', 'scripts of base class for Weapon and the interfaces needed to work with player\'s attack'],
         'https://inaslew.github.io/Play-Small-Theft-Auto/',

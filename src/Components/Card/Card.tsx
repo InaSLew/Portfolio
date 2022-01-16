@@ -9,7 +9,9 @@ const Card: FunctionComponent<{project: Project}> = props => {
     
     return (
         <div className={isTabletOrMobile ? 'mobile-card' : 'non-mobile-card'}>
-            <img src={props.project.img} alt={props.project.imgAltText} />
+            <img className='project-image' src={props.project.img} alt={props.project.imgAltText} />
+            <h3>{props.project.gameTitle}</h3>
+            <p className='sub-text'>{props.project.intro}</p>
         </div>
     );
 }
