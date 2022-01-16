@@ -1,22 +1,36 @@
 import './Card.css';
 import {useMediaQuery} from 'react-responsive';
-import {FunctionComponent} from 'react';
+import {FunctionComponent, useState} from 'react';
 import Project from '../../Project';
 import WorkTypePillButton from '../PillButton/WorkTypePillButton';
 import EnvironmentTypePillButton from '../PillButton/EnvironmentTypePillButton';
 
-const Card: FunctionComponent<{project: Project}> = props => {
+const Card: FunctionComponent<{key: string, project: Project}> = props => {
     // Screen size detection
     const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1224px)' });
+    const [showCardDetail, setShowCardDetail] = useState(false);
+
+    const onCardClicked = () => {
+        setShowCardDetail(!showCardDetail);
+        console.log('Card ' + props.project.gameTitle + ' clicked');
+    }
+
+    const CardDetail = () => {
+        return (
+            <div>Am Card detail for {props.project.gameTitle}</div>
+        );
+    }
     
     return (
-        <div className={isTabletOrMobile ? 'mobile-card' : 'non-mobile-card'}>
+        <div onClick={onCardClicked} className={isTabletOrMobile ? 'mobile-card' : 'non-mobile-card'}>
             <img className={isTabletOrMobile ? 'mobile-project-image' : 'non-mobile-project-image'} src={props.project.img} alt={props.project.imgAltText} />
             <h3>{props.project.gameTitle}</h3>
             <WorkTypePillButton type={props.project.workType} text={props.project.workTypeText} />
             <EnvironmentTypePillButton type={props.project.environmentType} text={props.project.environmentTypeText} />
             <p className='sub-text'>{props.project.intro}</p>
+            {showCardDetail && <CardDetail />}
         </div>
     );
 }
+
 export default Card;

@@ -1,6 +1,7 @@
 import { EnvironmentType, WorkType } from "./Enums";
 
 class Project {
+    key: string;
     img: string;
     imgAltText: string;
     gameTitle: string;
@@ -14,7 +15,8 @@ class Project {
     playDemoLink: string;
     repoLink: string;
     
-    constructor(img: string, imgAltText: string, gameTitle: string, workType: WorkType, environmentType: EnvironmentType, workTypeText: string, environmentTypeText: string, intro: string, details: string[], responsibleAreas: string[], playDemoLink: string, repoLink: string) {
+    constructor(key: string, img: string, imgAltText: string, gameTitle: string, workType: WorkType, environmentType: EnvironmentType, workTypeText: string, environmentTypeText: string, intro: string, details: string[], responsibleAreas: string[], playDemoLink: string, repoLink: string) {
+        this.key = key;
         this.img = img;
         this.imgAltText = imgAltText;
         this.gameTitle = gameTitle;
