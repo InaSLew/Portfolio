@@ -9,8 +9,8 @@ const WorkTypePillButton : FunctionComponent<{type: WorkType, text: string}> = p
     const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1224px)' });
     
     const getWorkTypeClass = () => {
-        return props.type == WorkType.Independent ? 'pill-button-project-independent' :
-        props.type == WorkType.SchoolProject ? 'pill-button-school-project' : 
+        return props.type === WorkType.Independent ? 'pill-button-project-independent' :
+        props.type === WorkType.SchoolProject ? 'pill-button-school-project' : 
         'pill-button-project-game-jam';
     }
     

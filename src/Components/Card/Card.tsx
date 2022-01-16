@@ -5,7 +5,7 @@ import Project from '../../Project';
 import WorkTypePillButton from '../PillButton/WorkTypePillButton';
 import EnvironmentTypePillButton from '../PillButton/EnvironmentTypePillButton';
 
-const Card: FunctionComponent<{key: string, project: Project}> = props => {
+const Card: FunctionComponent<{project: Project}> = props => {
     // Screen size detection
     const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1224px)' });
     const [showCardDetail, setShowCardDetail] = useState(false);
@@ -17,7 +17,10 @@ const Card: FunctionComponent<{key: string, project: Project}> = props => {
 
     const CardDetail = () => {
         return (
-            <div>Am Card detail for {props.project.gameTitle}</div>
+            <div className={isTabletOrMobile ? 'mobile-project-card-detail' : 'non-mobile-project-card-detail'}>
+                <hr />
+                {props.project.details.map((x,i) => <p key={i} className='sub-text'>{x}</p>)}
+            </div>
         );
     }
     

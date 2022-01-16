@@ -8,7 +8,7 @@ const EnvironmentTypePillButton : FunctionComponent<{type: EnvironmentType, text
     // Screen size detection
     const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1224px)' });
     
-    const getEnvrionmentTypeClass = () => props.type == EnvironmentType.MadeInUnity ? 'pill-button-madein-unity' : 'pill-button-madein-unreal';
+    const getEnvrionmentTypeClass = () => props.type === EnvironmentType.MadeInUnity ? 'pill-button-madein-unity' : 'pill-button-madein-unreal';
     
     return (
         <div className={'pill-button' + ' ' + getEnvrionmentTypeClass()}>

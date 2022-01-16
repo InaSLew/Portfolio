@@ -6,7 +6,6 @@ import Project from './Project';
 
 const projectData: Project[] = [
     new Project(
-        '0',
         crytalMountain,
         'Thumbnail for my game Crystal Mountain',
         'Crytal Mountain',
@@ -21,7 +20,6 @@ const projectData: Project[] = [
         'https://github.com/InaSLew/Crystal-Mountain'
         ),
     new Project(
-        '1',
         nightOfMutantPumpkins,
         'Thumbnail for Night of the Mutant Pumpkins',
         'Night of the Mutant Pumpkins',
@@ -36,7 +34,6 @@ const projectData: Project[] = [
         'https://github.com/InaSLew/AutumnGameJam-PumpkinMadness'
         ),
     new Project(
-        '2',
         smallTheftAuto,
         'Thumbnail for Small Theft Auto',
         'Small Theft Auto',

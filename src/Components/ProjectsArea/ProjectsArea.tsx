@@ -11,7 +11,7 @@ const ProjectsArea = () => {
         <section id='projects' className='projects-container'>
             <h2>Projects</h2>
             <div className={isTabletOrMobile ? 'mobile-project-cards-container' : 'non-mobile-project-cards-container'}>
-                {projectData.map(p => <Card key={p.key} project={p} />)}
+                {projectData.map((p,i) => <Card key={i} project={p} />)}
             </div>
         </section>
     );
