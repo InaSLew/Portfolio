@@ -17,7 +17,7 @@ const Card: FunctionComponent<{project: Project}> = props => {
 
     const CardDetail = () => {
         return (
-            <div className={isTabletOrMobile ? 'mobile-project-card-detail' : 'non-mobile-project-card-detail'}>
+            <div>
                 <hr />
                 {props.project.details.map((x,i) => <p key={i} className='sub-text'>{x}</p>)}
                 <ul>
