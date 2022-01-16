@@ -1,12 +1,12 @@
 .pill-button {
     border: none;
     color: white;
-    padding: 5px 20px;
+    padding: .1vmin 2vmin;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    margin: 4px 2px;
-    border-radius: 100px;
+    margin: .1vmin .5vmin;
+    border-radius: 10vmin;
 }
 
 .pill-button-madein-unity {

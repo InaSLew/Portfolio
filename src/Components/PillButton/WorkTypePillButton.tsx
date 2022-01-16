@@ -1,7 +1,6 @@
 import { FunctionComponent } from 'react';
-import { WorkType } from '../../../Enums';
+import { WorkType } from '../../Enums';
 import './WorkTypePillButton.css';
-
 
 const WorkTypePillButton : FunctionComponent<{type: WorkType, text: string}> = props => {
     
@@ -12,7 +11,9 @@ const WorkTypePillButton : FunctionComponent<{type: WorkType, text: string}> = p
     }
     
     return (
-        <div className={'pill-button' + ' ' + getWorkTypeClass()}>{props.text}</div>
+        <div className={'pill-button' + ' ' + getWorkTypeClass()}>
+            <p>{props.text}</p>
+        </div>
     );
 }
 export default WorkTypePillButton;

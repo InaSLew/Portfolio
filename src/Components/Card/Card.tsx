@@ -2,8 +2,8 @@ import './Card.css';
 import {useMediaQuery} from 'react-responsive';
 import {FunctionComponent} from 'react';
 import Project from '../../Project';
-import WorkTypePillButton from '../PillButton/WorkType/WorkTypePillButton';
-import EnvironmentTypePillButton from '../PillButton/EnvironmentType/EnvironmentTypePillButton';
+import WorkTypePillButton from '../PillButton/WorkTypePillButton';
+import EnvironmentTypePillButton from '../PillButton/EnvironmentTypePillButton';
 
 const Card: FunctionComponent<{project: Project}> = props => {
     // Screen size detection
