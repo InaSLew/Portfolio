@@ -27,8 +27,8 @@ const Card: FunctionComponent<{project: Project}> = props => {
                 <ul>
                     {props.project.responsibleAreas.map((x,i) => <li key={i} className='sub-text card-detail-list-item'>{x}</li>)}
                 </ul>
-                <p className='sub-text'><a className='project-link' href={props.project.playDemoLink} target="_blank">Play here</a></p>
-                <p className='sub-text'><a className='project-link' href={props.project.repoLink} target="_blank">Project repo here</a></p>
+                <p className='sub-text'><a className='project-link' rel="noreferrer" href={props.project.playDemoLink} target="_blank">Play here</a></p>
+                <p className='sub-text'><a className='project-link' rel="noreferrer" href={props.project.repoLink} target="_blank">Project repo here</a></p>
             </div>
         );
     }
