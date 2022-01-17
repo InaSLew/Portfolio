@@ -1,0 +1,47 @@
+/* For isDesktopOrLaptop */
+.nav-container-DesktopOrLaptop {
+    background-color: #1c1d25;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-list-container-DesktopOrLaptop {
+    display: flex;
+    width: 500px;
+    justify-content: space-around;
+    font-size: 30px;
+}
+
+.logo-DesktopOrLaptop {
+    height: 80px;
+    margin: 30px;
+}
+
+/******************************/
+
+/* For isTableOrMobile */
+.nav-container-TabletOrMobile {
+    display: flex;
+    flex-direction: column-reverse;
+    background-color: #2b2c38;
+    margin: 0px;
+}
+
+.hamburger {
+    display: block;
+    border: 0;
+    background: transparent;
+    color: white;
+    font-size: 30px;
+    margin: 20px;
+    align-self: flex-end;
+}
+
+.logo-TabletOrMobile {
+    display: none;
+}
+
+/******************************/
+.set-list-style-to-none {
+    list-style-type: none;
+}

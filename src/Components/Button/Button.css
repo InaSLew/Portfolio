@@ -1,0 +1,18 @@
+.button {
+    width: 30vmin;
+    height: 8vmin;
+    border-radius: 8vmin;
+    background-color: coral;
+    text-align: center;
+    font-size: 4.5vmin;
+    font-weight: 300;
+    padding-top: 0.5vmin;
+    margin-top: 5vmin;
+}
+.button:hover {
+    background-color: #ef744b;
+}
+.button:active {
+    background-color: #A9A9A9;
+    color: #808080;
+}
