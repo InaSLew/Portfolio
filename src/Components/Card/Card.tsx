@@ -1,7 +1,7 @@
 import './Card.css';
 import {useMediaQuery} from 'react-responsive';
 import {FunctionComponent, useState} from 'react';
-import Project from '../../Project';
+import {Project, ResponsibleArea} from '../../Project';
 import WorkTypePillButton from '../PillButton/WorkTypePillButton';
 import EnvironmentTypePillButton from '../PillButton/EnvironmentTypePillButton';
 
@@ -23,11 +23,16 @@ const Card: FunctionComponent<{project: Project}> = props => {
         return (
             <div>
                 <hr />
-                {props.project.details.map((x,i) => <p key={i} className='sub-text'>{x}</p>)}
+                {props.project.details.map((x: string,i: number) => <p key={i} className='sub-text'>{x}</p>)}
                 <ul>
-                    {props.project.responsibleAreas.map((x,i) => <li key={i} className='sub-text card-detail-list-item'>{x}</li>)}
+                    {props.project.responsibleAreas.map((x: ResponsibleArea, i: number) => {
+                        return <div>
+                            <li key={i} className='sub-text card-detail-list-item'>{x.description}</li>
+                            {x.demoGifs !== null && x.demoGifs?.map((y, i) => <img key={i} src={y.gif} alt={y.altText} />)}
+                        </div>
+                    })}
                 </ul>
-                <p className='sub-text'><a className='project-link' rel="noreferrer" href={props.project.playDemoLink} target="_blank">Play here</a></p>
+                {props.project.playDemoLink != "" && <p className='sub-text'><a className='project-link' rel="noreferrer" href={props.project.playDemoLink} target="_blank">Play here</a></p>}
                 <p className='sub-text'><a className='project-link' rel="noreferrer" href={props.project.repoLink} target="_blank">Project repo here</a></p>
             </div>
         );

@@ -1,6 +1,6 @@
 import { EnvironmentType, WorkType } from "./Enums";
 
-class Project {
+export class Project {
     img: string;
     imgAltText: string;
     gameTitle: string;
@@ -10,11 +10,11 @@ class Project {
     environmentTypeText: string;
     intro: string;
     details: string[];
-    responsibleAreas: string[];
+    responsibleAreas: ResponsibleArea[];
     playDemoLink: string;
     repoLink: string;
     
-    constructor(img: string, imgAltText: string, gameTitle: string, workType: WorkType, environmentType: EnvironmentType, workTypeText: string, environmentTypeText: string, intro: string, details: string[], responsibleAreas: string[], playDemoLink: string, repoLink: string) {
+    constructor(img: string, imgAltText: string, gameTitle: string, workType: WorkType, environmentType: EnvironmentType, workTypeText: string, environmentTypeText: string, intro: string, details: string[], responsibleAreas: ResponsibleArea[], playDemoLink: string, repoLink: string) {
         this.img = img;
         this.imgAltText = imgAltText;
         this.gameTitle = gameTitle;
@@ -30,4 +30,26 @@ class Project {
     }
 }
 
-export default Project;
+export class ResponsibleArea
+{
+    description: string;
+    demoGifs?: DemoGif[];
+    
+    constructor(description: string, demoGifs?: DemoGif[])
+    {
+        this.description = description;
+        this.demoGifs = demoGifs;
+    }
+}
+
+export class DemoGif
+{
+    gif: string;
+    altText: string;
+    
+    constructor(gif: string, altText: string)
+    {
+        this.gif = gif;
+        this.altText = altText;
+    }
+}
